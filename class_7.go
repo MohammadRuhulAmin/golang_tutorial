@@ -1,6 +1,9 @@
-package main 
+package main
 
-import "fmt"
+import (
+	"fmt"	
+)
+
 
 
 func main(){
@@ -28,4 +31,23 @@ func main(){
 	default:
 		fmt.Println("error!")
 	}
+
+   var mySuperHero interface{} = 52.33
+   fmt.Println(mySuperHero)
+
+   var myObject interface{}  = "dhaka" //  this is anytype of data 
+   fmt.Println(myObject)
+
+   switch myObject.(type) {
+	case int:
+		fmt.Println("this is integer")
+	case float32:
+		fmt.Println("this is float data type")
+	case string:
+		fmt.Println("this data type is string")
+   }
+
+  
+
+
 }
