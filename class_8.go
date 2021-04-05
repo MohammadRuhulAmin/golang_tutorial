@@ -50,34 +50,35 @@ func main() {
 		fmt.Println(k, " -- ", v)
 	}
 
-	myArray := []string {"ruhul","sakib", "sajid","affan","ammar"}
-	for k,v:=range myArray{
-		fmt.Println(k," ",v)
+	myArray := []string{"ruhul", "sakib", "sajid", "affan", "ammar"}
+	for k, v := range myArray {
+		fmt.Println(k, " ", v)
 	}
-	// loop over maps 
+	// loop over maps
 
-	 myStates := map[string]string {
-		"dhaka":"2200112",
-		"rajshahi":"225222",
-		"khulna" :"77445512",
-		"barisal":"885521221",
+	myStates := map[string]string{
+		"dhaka":    "2200112",
+		"rajshahi": "225222",
+		"khulna":   "77445512",
+		"barisal":  "885521221",
 	}
 
-	for k,v:=range myStates{
-		fmt.Println(k, " | " ,v)
-	} 
+	for k, v := range myStates {
+		fmt.Println(k, " | ", v)
+	}
 	// what if i just want to get value instead of key
-	for _,v:=range myStates{
-		fmt.Println( v)
+	for _, v := range myStates {
+		fmt.Println(v)
 	}
 
 	// what if i just want to get key instead of key
-	for k,_:=range myStates{
+	for k, _ := range myStates {
 		fmt.Println(k)
 	}
 
+	
 
 
 
-
+    
 }
