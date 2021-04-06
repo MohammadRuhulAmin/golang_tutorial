@@ -1,7 +1,8 @@
 package main
 
 import "fmt"
- 
+
+
 func main() {
     g:= func(){
 		fmt.Println("function call G")
